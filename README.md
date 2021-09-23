@@ -5,46 +5,40 @@ The assignment for this project is to create a web application using React.  Thi
 as well as handle various CRUD requests.  
 ### / - Homepage
 
-![home page](screenshots/home.png)
+
 
 The homepage will display a list of all decks currently saved in the API, and the option to create a new deck.  Each deck listed will have the option to study, edit,
 or delete that deck.
 
 ### /decks/:deckId - View a selected deck
 
-![view deck](screenshots/viewdeck.png)
 
 When viewing a particular deck, the cards associated with the deck will be displayed.  Additionally, options to edit a deck, delete a deck, study a deck, and create a new card will be visible.  Each card will have the option to either delete or edit the card.
 
 ### /decks/new - Create a new deck
 
-![create new deck](screenshots/createdeck.png)
 
 The same form component is used to create a deck and to edit a deck.
 
 ### /decks/:deckId/edit - Edit an existing deck
 
-![edit deck](screenshots/editdeck.png)
 
 ### /decks/:deckId/study - Do a study session of the selected deck
 
-![valid study session](screenshots/validstudysession.png)
+
 
 You flip through each card in the deck until you read the entire deck.  You are then prompted if you want to restart the session.  If no, you return to the home page.
 
 You can only perform a study session if the deck has at least 3 cards.  If you do not, the application instead directs you to add more cards to the deck.
 
-![invalid study session](screenshots/invalidstudysession.png)
 
 ### /decks/:deckId/cards/new
 
-![add new card](screenshots/addcard.png)
 
 The same form is used to both add a card and to edit a card.
 
 ### /decks/:deckId/cards/:cardId/edit
 
-![edit a card](screenshots/editcard.png)
 
 
 API is a data file run on localhost:5000, all API calls were prebuilt for this assignment.
